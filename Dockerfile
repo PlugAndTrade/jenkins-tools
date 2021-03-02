@@ -1,3 +1,3 @@
-FROM alpine:3.9
+FROM debian:buster-slim
 
-RUN apk --no-cache add gettext bash curl git
+RUN apt-get update && apt-get install -y gettext bash curl git
